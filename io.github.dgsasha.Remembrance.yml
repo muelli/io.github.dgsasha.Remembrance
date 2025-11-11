@@ -26,8 +26,13 @@ modules:
       - -Dbackends=gtk4
     sources:
       - type: archive
-        url: https://github.com/flatpak/libportal/archive/refs/tags/0.6.tar.gz
-        sha256: 8ad326c4f53b7433645dc86d994fef0292bee8adda0fe67db9288ace19250a9c
+        url: https://github.com/flatpak/libportal/archive/0.9.1.tar.gz
+        sha256: ea422b789ae487e04194d387bea031fd7485bf88a18aef8c767f7d1c29496a4e
+        x-checker-data:
+          type: anitya
+          project-id: 230124
+          stable-only: true
+          url-template: https://github.com/flatpak/libportal/archive/$version.tar.gz
 
   - name: gsound
     buildsystem: meson
